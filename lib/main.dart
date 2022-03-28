@@ -61,13 +61,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           margin: const EdgeInsets.all(25.0),
           padding: const EdgeInsets.all(25.0),
+          
           decoration: BoxDecoration(
             color: Color.fromRGBO(63, 68, 75, 1),
+
             border: Border.all(
                 color: Color.fromRGBO(65, 66, 79, 1),
                 width: 4.0,
                 style: BorderStyle.solid), //Border.all
-            /*** The BorderRadius widget  is here ***/
+            
             borderRadius: BorderRadius.all(
               Radius.circular(10),
             ), //BorderRadius.all
@@ -79,21 +81,27 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(
                   height: 70,
                   width: 100,
+
                   child : FloatingActionButton(
                   backgroundColor: Colors.red,
                   onPressed: _decrementCount,
                   child: const Icon(Icons.remove,size:30),
                 ),
                 ),
+
                 const SizedBox(width: 30),
+
                 Text(
                   '$_counter',
                   style: TextStyle(fontSize: 35,color: Colors.white),
                 ),
+
                 const SizedBox(width: 30),
+
                 SizedBox(
                   height: 70,
                   width: 100,
+
                   child : FloatingActionButton(
                   backgroundColor: Colors.green,
                   onPressed: _incrementCounter,
@@ -128,13 +136,15 @@ class Page_Message extends StatelessWidget {
             height: 150.0,
             margin: const EdgeInsets.all(25.0),
             padding: const EdgeInsets.all(25.0),
+
             decoration: BoxDecoration(
               color: Colors.white,
+
               border: Border.all(
                   color: const Color.fromRGBO(65, 66, 79, 1),
                   width: 4.0,
                   style: BorderStyle.solid), //Border.all
-              /*** The BorderRadius widget  is here ***/
+              
               borderRadius: const BorderRadius.all(
                 Radius.circular(10),
               ), //BorderRadius.all
@@ -142,21 +152,25 @@ class Page_Message extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
+
               children: <Widget>[
             SizedBox(
               child: Center(
                 child: AnimatedTextKit(
                   animatedTexts: [
+
                     ColorizeAnimatedText(
                       'Hello World',
                       textStyle: colorizeTextStyle,
                       colors: colorizeColors,
                     ),
+
                     ColorizeAnimatedText(
                       'Victoire',
                       textStyle: colorizeTextStyle,
                       colors: colorizeColors,
                     ),
+
                     ColorizeAnimatedText(
                       '+ 10 Points',
                       textStyle: colorizeTextStyle,
@@ -168,9 +182,11 @@ class Page_Message extends StatelessWidget {
                     ),
                   ),
                 ),
+
                 SizedBox(
                   height: 70,
                   width: 100,
+
                   child : FloatingActionButton(
                     backgroundColor: Colors.lightBlue,
                     onPressed: () => _accueil(context),
@@ -209,16 +225,19 @@ class Page_Message_Secret extends StatelessWidget {
       body: Container(
         child: Align(
           alignment: Alignment.center,
+
           child: Container(
             height: 150.0,
             width: 420.0,
+
             decoration: BoxDecoration(
               color: Colors.orange,
+
               border: Border.all(
                   color: Color.fromRGBO(72, 72, 72, 1),
                   width: 4.0,
                   style: BorderStyle.solid), //Border.all
-              /*** The BorderRadius widget  is here ***/
+              
               borderRadius: BorderRadius.all(
                 Radius.circular(10),
               ), //BorderRadius.all
@@ -227,17 +246,22 @@ class Page_Message_Secret extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
+
                 const SizedBox(width: 30),
+
                 const Text(
                   'HELLO',
                   style: TextStyle(fontSize: 40.0,color: Colors.white),
                 ),
+
                 const SizedBox(width: 15.0, height: 100.0),
+
                 DefaultTextStyle(
                   style: const TextStyle(
                     fontSize: 35.0,
                     color: Colors.white,
                   ),
+
                   child: AnimatedTextKit(
                     repeatForever: true,
                     isRepeatingAnimation: true,
@@ -250,6 +274,7 @@ class Page_Message_Secret extends StatelessWidget {
                 SizedBox(
                   height: 70,
                   width: 100,
+
                   child : FloatingActionButton(
                     backgroundColor: Colors.orangeAccent,
                     onPressed: () => _accueil(context),
