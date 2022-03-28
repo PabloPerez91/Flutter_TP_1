@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        backgroundColor: Color.fromRGBO(96, 141, 155, 1), // status bar color
+        backgroundColor: Color.fromRGBO(63, 68, 75, 1), // status bar color
       ),
       backgroundColor: Colors.white,
       body: Container(
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
           margin: const EdgeInsets.all(25.0),
           padding: const EdgeInsets.all(25.0),
           decoration: BoxDecoration(
-            color: Color.fromRGBO(96, 141, 155, 0.6),
+            color: Color.fromRGBO(63, 68, 75, 1),
             border: Border.all(
                 color: Color.fromRGBO(65, 66, 79, 1),
                 width: 4.0,
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 70,
                   width: 100,
                   child : FloatingActionButton(
-                  backgroundColor: Colors.green,
+                  backgroundColor: Colors.red,
                   onPressed: _decrementCount,
                   child: const Icon(Icons.remove,size:30),
                 ),
@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 70,
                   width: 100,
                   child : FloatingActionButton(
-                  backgroundColor: Colors.red,
+                  backgroundColor: Colors.green,
                   onPressed: _incrementCounter,
                   child: const Icon(Icons.add,size:30),
                   ),
@@ -131,11 +131,11 @@ class Page_Message extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
-                  color: Color.fromRGBO(65, 66, 79, 1),
+                  color: const Color.fromRGBO(65, 66, 79, 1),
                   width: 4.0,
                   style: BorderStyle.solid), //Border.all
               /*** The BorderRadius widget  is here ***/
-              borderRadius: BorderRadius.all(
+              borderRadius: const BorderRadius.all(
                 Radius.circular(10),
               ), //BorderRadius.all
             ),
